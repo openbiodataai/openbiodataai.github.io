@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>OpenBioData.ai Brown Bag – April 29</title>
+
+<!-- Font & simple reset -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --bg:#f9fafb; /*white*/
+    --card:#ffffff; /*white*/
+    --text:#111827; /* dark */
+    --accent:#38aaba; /* blue - main */
+    --accent-light:#276b74; /* blue - darker */
+    --muted:#658589;
+    --radius:14px;
+    --shadow:0 4px 14px rgba(0,0,0,.07);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0b0c10; /*black*/
+      --card:#161b22; /*black*/
+      --text:#e5e7eb; /*white*/
+      --accent:#38aaba;
+      --accent-light:#276b74;
+      --muted:#658589;
+      --shadow:0 6px 18px rgba(0,0,0,.45);
+    }
+  }
+  body{font:400 1rem/1.6 "Inter",system-ui;background:var(--bg);color:var(--text);}
+  a{color:var(--accent-light);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:960px;margin:auto;padding:4rem 1rem}
+  h1,h2,h3{font-weight:700;letter-spacing:-.02em}
+  h1{font-size:clamp(2.5rem,5vw,3rem);margin-bottom:1rem;color:#ffffff;}
+  h2{font-size:1.7rem;margin:3rem 0 1.2rem;color:var(--accent);}
+  h3{font-size:1.2rem;margin:1.6rem 0 .6rem;color:var(--text)}
+  p{margin:.8rem 0}
+  /* HERO */
+  .hero{
+    text-align:center;
+    padding:4.5rem 1rem 3.5rem;
+    background:var(--accent);
+    color:#ffffff;
+  }
+  .tag{
+    display:inline-block;
+    padding:.3rem .9rem;
+    border-radius:9999px;
+    font-size:.83rem;
+    font-weight:600;
+    letter-spacing:.02em;
+    background:rgba(255,255,255,.15);
+    color:#ffffff;
+  }
+  /* GRID & CARDS */
+  .grid{display:grid;gap:2rem}
+  @media(min-width:640px){.grid-2{grid-template-columns:repeat(2,1fr)}}
+  .card{
+    background:var(--card);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:1.6rem 1.4rem;
+  }
+  .speaker img{
+    width:72px;height:72px;border-radius:50%;object-fit:cover;margin-right:1rem;flex:0 0 auto;
+  }
+  .speaker{display:flex;align-items:center}
+  .speaker div{flex:1}
+  .agenda li,.rules li{margin:.4rem 0 0 1.2rem;color:var(--text)}
+  .agenda li span{color:var(--muted)}
+  footer{margin:4rem 0 2rem;text-align:center;font-size:.85rem;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>OpenBioData.ai Brown Bag</h1>
+  <p class="tag">April 29 &mdash; 11 AM ET · live on Zoom</p>
+  <p style="margin-top:1.2rem;font-size:1.125rem">Forty-five minutes of no-fluff computational biology &amp; AI.</p>
+  <p><a href="https://cmu.zoom.us/j/96450644471?pwd=nucSXDNM07WYc5RBRuJW2U4RCIxZTq.1" style="font-weight:600;border:2px solid #fff;padding:.5rem 1rem;border-radius:var(--radius);display:inline-block;margin-top:1.4rem;color:#ffffff">Join&nbsp;Session&nbsp;→</a></p>
+</header>
+
+<main class="wrap">
+
+  <section class="grid grid-2">
+    <div>
+      <h2>Mission</h2>
+      <p>Advance biological understanding by openly dissecting and demystifying the latest computational and AI tools, turning hard-won technical insights into shared, actionable knowledge.</p>
+    </div>
+    <div>
+      <h2>Vision</h2>
+      <p>A globally connected community of scientists whose collective literacy in computational biology rises so quickly that yesterday’s cutting-edge methods become today’s standard practices, leading to breakthrough science.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Speakers</h2>
+    <article class="card speaker">
+      <img src="https://media.licdn.com/dms/image/v2/C4E03AQGfsJ_HRL4r4w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516270462144?e=1750896000&v=beta&t=nooYoz6f5Be74ipNFymYNXJx6RDBlzEgHtq-FV3Sezk" alt="Jason Chin headshot">
+      <div>
+        <h3><a href="https://www.linkedin.com/in/chenshanchin/">Jason Chin</a></h3>
+        <p>Lessons learned from implementing AI Agents for pFDA LLM challenges.</p>
+      </div>
+    </article>
+
+    <article class="card speaker">
+      <img src="https://media.licdn.com/dms/image/v2/D4E03AQGs5bY_GiKXWg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1674132071647?e=1750896000&v=beta&t=Dzw3uXOKBXCGP46SrR4rXut2z-tEj54lijmx00GcdIs" alt="Helena Deus headshot">
+      <div>
+        <h3><a href="https://www.linkedin.com/in/helenadeus/">Helena Deus, PhD</a></h3>
+        <p>From Iron Man to the Avengers: Evolving the way we engage with AI.</p>
+      </div>
+    </article>
+
+    <article class="card speaker">
+      <img src="https://media.licdn.com/dms/image/v2/D4E03AQHhDtqwMl6tsA/profile-displayphoto-shrink_800_800/B4EZX3UwSxHYAg-/0/1743611168282?e=1750896000&v=beta&t=3FPWpEL5kMLn9VjYc6KwjyzwUAWIOqdfV3xezOuBs6A" alt="Rorry Brenner headshot">
+      <div>
+        <h3><a href="https://www.linkedin.com/in/rorry-brenner-a64a25105/">Rorry Brenner</a></h3>
+        <p>A new ML method for updating neurons to increase accuracy &amp; efficiency&mdash;with bio-space examples.</p>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <h2>Overview</h2>
+    <p><a href="http://openbiodata.ai">OpenBioData.ai</a> Brown Bag is a monthly virtual discussion where researchers dissect the newest computational tools propelling biological discovery.  Anyone from research or tech is welcome; hype is not.</p>
+  </section>
+
+  <section class="grid grid-2">
+    <div>
+      <h2>Format</h2>
+      <ul class="agenda">
+        <li><strong>Opening</strong> <span>(1–2 min)</span></li>
+        <li><strong>Per speaker</strong> <span>(~10–15 min)</span></li>
+        <li><strong>Lightning panel</strong> <span>(5 min)</span></li>
+        <li><strong>Wrap-up</strong> <span>(1 min)</span></li>
+      </ul>
+      <p style="margin-top:1rem">Total time: 45 minutes.</p>
+    </div>
+
+    <div>
+      <h2>Ground Rules</h2>
+      <ul class="rules">
+        <li>Tools discussed must have been used within the past six months.</li>
+        <li>No selling or product pitches&mdash;violators receive playful heckling.</li>
+        <li>Show whatever communicates best: demos, code, benchmarks, anecdotes.</li>
+        <li>Sessions start fully moderated; adjustments come as community grows.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Non-Affiliation Disclaimer</h2>
+    <p>The views and opinions expressed by each presenter and MC are solely their own and do not necessarily reflect those of their employers, affiliated institutions, sponsors, or BioData.ai.  Content is provided for educational purposes only and does not constitute endorsement, professional advice, or official policy of any organization.</p>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 OpenBioData.ai · Built with insatiable curiosity &amp; spunk.
+</footer>
+</body>
+</html>
